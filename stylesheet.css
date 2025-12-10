@@ -1,0 +1,146 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+    background-color: #6c8088;
+    color: black;
+}
+
+.navbar {
+  background-color: #55a8c4;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2px 20px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 10px; 
+}
+
+.searchbar {
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: black;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+.searchbar input {
+    padding: 5px;
+}
+
+.produk {
+    display: flex;
+    border-top: 3px solid rgba(0, 0, 255, 0);
+    min-height: 400px;
+}
+
+.kiri {
+    max-width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    color: #000;
+}
+
+.kiri h1 {
+    font-size: clamp(2rem, 6vw, 4rem);
+    font-weight: bold;
+}
+
+.kiri p {
+    font-size: clamp(1rem, 2vw, 1.5rem);
+    line-height: 1.6;
+    font-weight: bold;
+}
+
+.kanan {
+    width: 70%;
+    border-left: 2px solid rgba(0, 0, 255, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.kanan img {
+    width: 100%;
+    max-width: 400px;
+    border: 2px solid black;
+}
+
+@media screen and (max-width: 768px) {
+
+    .navbar {
+        display: flex;
+        flex-direction: column;  
+        align-items: stretch;
+        padding: 10px;
+    }
+
+    .nav-links {
+        display: flex;
+        flex-direction: row;  
+        justify-content: flex-end;
+        gap: 12px;
+        flex-wrap: nowrap;        
+        font-size: 14px;
+    }
+
+    .nav-right {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 10px;
+        gap: 10px;
+    }
+
+    .searchbar {
+        width: 100%;   
+        max-width: 220px;
+    }
+
+    .produk {
+        flex-direction: column;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .kiri {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .kanan {
+        width: 100%;
+    }
+
+    .kanan img {
+        max-width: 100%;
+    }
+}
+
+
